@@ -6,7 +6,6 @@ import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
 
-import sidebar from "./sidebar";
 
 import styles from "./index.module.css";
 
