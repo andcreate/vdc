@@ -18,17 +18,20 @@ const config: Config = {
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: "andcreate", // Usually your GitHub org/user name.
-  projectName: "docusaurus", // Usually your repo name.
+  projectName: "vdc", // Usually your repo name.
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
+
+  deploymentBranch: "gh-pages",
+  trailingSlash: false,
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: "ja-JP",
-    locales: ["ja-JP", "ko-KR", "en-US"],
+    defaultLocale: "ja",
+    locales: ["ja", "ko", "en"],
   },
 
   presets: [
