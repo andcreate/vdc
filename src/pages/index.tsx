@@ -6,7 +6,6 @@ import Layout from "@theme/Layout";
 import HomepageFeatures from "@site/src/components/HomepageFeatures";
 import Heading from "@theme/Heading";
 
-
 import styles from "./index.module.css";
 
 function HomepageHeader() {
@@ -20,7 +19,7 @@ function HomepageHeader() {
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link className="button button--secondary button--lg" to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            Docusaurus Tutorial - 50min ⏱️
           </Link>
         </div>
       </div>
