@@ -156,8 +156,8 @@ const config: Config = {
           title: "More",
           items: [
             {
-              label: "andCreate",
-              href: "https://www.andcre.com/",
+              label: "#andCreate",
+              href: "https://andcreate.github.io/",
             },
           ],
         },
