@@ -2,11 +2,15 @@ import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 
+import path from "path";
+
+// import tailwindPlugin from "./plugins/tailwind-config.cjs"; // add this
+
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: "My Site",
-  tagline: "Dinosaurs are cool",
+  title: "#StudioLouie Documents",
+  tagline: "アセットの使い方や小ネタ",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -44,20 +48,20 @@ const config: Config = {
           // Remove this to remove the "edit this page" links.
           editUrl: "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
         },
-        blog: {
-          showReadingTime: true,
-          feedOptions: {
-            type: ["rss", "atom"],
-            xslt: true,
-          },
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
-          // Useful options to enforce blogging best practices
-          onInlineTags: "warn",
-          onInlineAuthors: "warn",
-          onUntruncatedBlogPosts: "warn",
-        },
+        // blog: {
+        //   showReadingTime: true,
+        //   feedOptions: {
+        //     type: ["rss", "atom"],
+        //     xslt: true,
+        //   },
+        //   // Please change this to your repo.
+        //   // Remove this to remove the "edit this page" links.
+        //   editUrl: "https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/",
+        //   // Useful options to enforce blogging best practices
+        //   onInlineTags: "warn",
+        //   onInlineAuthors: "warn",
+        //   onUntruncatedBlogPosts: "warn",
+        // },
         theme: {
           customCss: "./src/css/custom.css",
         },
@@ -75,59 +79,76 @@ const config: Config = {
     //   contextualSearch: true,
     // },
 
+    docs: {
+      sidebar: {
+        // hideable: false,
+        autoCollapseCategories: true,
+      },
+    },
+
+    colorMode: {
+      defaultMode: "dark",
+      disableSwitch: true,
+    },
     // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
     navbar: {
-      title: "My Site",
+      title: "#StudioLouie",
       logo: {
-        alt: "My Site Logo",
-        src: "img/logo.svg",
+        alt: "#StudioLouie Logo",
+        src: "img/svg-dog.svg",
       },
       items: [
+        // {
+        //   type: "docSidebar",
+        //   sidebarId: "tutorialSidebar",
+        //   position: "left",
+        //   label: "Tutorial",
+        // },
         {
           type: "docSidebar",
-          sidebarId: "tutorialSidebar",
+          sidebarId: "studioLouieSidebar",
           position: "left",
-          label: "Tutorial",
+          label: "Documents",
         },
-        { to: "/blog", label: "Blog", position: "left" },
+        // { to: "/blog", label: "Blog", position: "left" },
         {
           type: "localeDropdown",
           position: "right",
         },
-        {
-          href: "https://github.com/facebook/docusaurus",
-          label: "GitHub",
-          position: "right",
-        },
+        // {
+        //   href: "https://andcreate.github.io/",
+        //   label: "#andCreate",
+        //   position: "right",
+        // },
       ],
     },
     footer: {
       style: "dark",
       links: [
         {
-          title: "Docs",
+          title: "#StudioLouie",
           items: [
             {
-              label: "Tutorial",
+              label: "Document",
               to: "/docs/intro",
             },
           ],
         },
         {
-          title: "Community",
+          title: "Links",
           items: [
             {
-              label: "Stack Overflow",
-              href: "https://stackoverflow.com/questions/tagged/docusaurus",
+              label: "Booth - #StudioLouie",
+              href: "https://andcreate.booth.pm/",
             },
             {
-              label: "Discord",
-              href: "https://discordapp.com/invite/docusaurus",
+              label: "VR Portfolio - ROGIX Activity",
+              href: "https://virtual.andcre.com/",
             },
             {
-              label: "X",
-              href: "https://x.com/docusaurus",
+              label: "X - ROGIX_VR",
+              href: "https://x.com/ROGIX_VR",
             },
           ],
         },
@@ -135,23 +156,20 @@ const config: Config = {
           title: "More",
           items: [
             {
-              label: "Blog",
-              to: "/blog",
-            },
-            {
-              label: "GitHub",
-              href: "https://github.com/facebook/docusaurus",
+              label: "andCreate",
+              href: "https://www.andcre.com/",
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} #StudioLouie. Built with Docusaurus.`,
     },
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
     },
   } satisfies Preset.ThemeConfig,
+  plugins: [path.resolve(__dirname, "./plugins/tailwind-config.cjs")],
 };
 
 export default config;
