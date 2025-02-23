@@ -91,7 +91,7 @@ const config: Config = {
       disableSwitch: true,
     },
     // Replace with your project's social card
-    image: "img/docusaurus-social-card.jpg",
+    image: "img/booth_header_2.png",
     navbar: {
       title: "#StudioLouie",
       logo: {
