@@ -5,6 +5,7 @@
  * work well for content-centric websites.
  */
 
+ @import url('https://fonts.googleapis.com/css2?family=Jua&family=Noto+Sans+JP:wght@100..900&display=swap');
 
 /* You can override the default Infima variables here. */
 :root {
@@ -19,6 +20,18 @@
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
+
+:root {
+  --bg: #000000;
+  --clr-1: #00c2ff;
+  --clr-2: #33ff8c;
+  --clr-3: #ffc640;
+  --clr-4: #e54cff;
+
+  --blur: 1rem;
+  --fs: clamp(3rem, 8vw, 7rem);
+  --ls: clamp(-1.75px, -0.25vw, -3.5px);
+}
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 /* [data-theme='dark'] {
@@ -41,7 +54,6 @@
   --ifm-color-primary-lightest: #dabfa7;
 }
 
-
 .footer--dark {
   background: #402106;
 }
@@ -59,3 +71,16 @@ main .container {
   @apply !px-8;
 }
 
+
+
+.noto-sans-jp {
+  font-family: "Noto Sans JP", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.jua-regular {
+  font-family: "Jua", serif;
+  font-weight: 400;
+  font-style: normal;
+}
