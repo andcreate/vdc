@@ -90,7 +90,7 @@ export default function HomepageFeatures(): ReactNode {
   return (
     <section className={styles.features}>
       <div className="container">
-        <div className="flex justify-center " style={{ marginLeft: "auto", marginRight: "auto" }}>
+        <div className="flex justify-center flex-col lg:flex-row " style={{ marginLeft: "auto", marginRight: "auto" }}>
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
