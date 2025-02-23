@@ -1,0 +1,38 @@
+{
+  "link.title.#StudioLouie": {
+    "message": "#StudioLouie",
+    "description": "The title of the footer links column with title=#StudioLouie in the footer"
+  },
+  "link.title.Links": {
+    "message": "Links",
+    "description": "The title of the footer links column with title=Links in the footer"
+  },
+  "link.title.More": {
+    "message": "More",
+    "description": "The title of the footer links column with title=More in the footer"
+  },
+  "link.item.label.Document": {
+    "message": "Document",
+    "description": "The label of footer link with label=Document linking to /docs/intro"
+  },
+  "link.item.label.Booth - #StudioLouie": {
+    "message": "Booth - #StudioLouie",
+    "description": "The label of footer link with label=Booth - #StudioLouie linking to https://andcreate.booth.pm/"
+  },
+  "link.item.label.VR Portfolio - ROGIX Activity": {
+    "message": "VR Portfolio - ROGIX Activity",
+    "description": "The label of footer link with label=VR Portfolio - ROGIX Activity linking to https://virtual.andcre.com/"
+  },
+  "link.item.label.X - ROGIX_VR": {
+    "message": "X - ROGIX_VR",
+    "description": "The label of footer link with label=X - ROGIX_VR linking to https://x.com/ROGIX_VR"
+  },
+  "link.item.label.andCreate": {
+    "message": "andCreate",
+    "description": "The label of footer link with label=andCreate linking to https://www.andcre.com/"
+  },
+  "copyright": {
+    "message": "Copyright © 2025 #StudioLouie. Built with Docusaurus.",
+    "description": "The footer copyright"
+  }
+}

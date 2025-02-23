@@ -1,0 +1,38 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.パーティクル": {
+    "message": "パーティクル",
+    "description": "The label for category パーティクル in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.パーティクル.link.generated-index.description": {
+    "message": "5 minutes to learn the most important Docusaurus concepts.",
+    "description": "The generated-index page description for category パーティクル in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.MovementSparkle": {
+    "message": "MovementSparkle",
+    "description": "The label for category MovementSparkle in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.MovementSparkle.link.generated-index.description": {
+    "message": "「MovementSparkle」の使い方について説明したページです。",
+    "description": "The generated-index page description for category MovementSparkle in sidebar tutorialSidebar"
+  },
+  "sidebar.studioLouieSidebar.category.パーティクル": {
+    "message": "パーティクル",
+    "description": "The label for category パーティクル in sidebar studioLouieSidebar"
+  },
+  "sidebar.studioLouieSidebar.category.パーティクル.link.generated-index.description": {
+    "message": "5 minutes to learn the most important Docusaurus concepts.",
+    "description": "The generated-index page description for category パーティクル in sidebar studioLouieSidebar"
+  },
+  "sidebar.studioLouieSidebar.category.MovementSparkle": {
+    "message": "MovementSparkle",
+    "description": "The label for category MovementSparkle in sidebar studioLouieSidebar"
+  },
+  "sidebar.studioLouieSidebar.category.MovementSparkle.link.generated-index.description": {
+    "message": "「MovementSparkle」の使い方について説明したページです。",
+    "description": "The generated-index page description for category MovementSparkle in sidebar studioLouieSidebar"
+  }
+}
